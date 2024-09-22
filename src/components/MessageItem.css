@@ -1,0 +1,53 @@
+.message-item {
+  min-height: 40px; 
+  height: auto; /* Never set fixed height */
+  max-width: 70%; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  position: relative;
+  margin: 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background-color: #f0f0f0; */
+  border-radius: 17px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  font-family: Calibri, Cambria, "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+}
+
+.message-item:hover {
+  background-color: #e0e0e0;
+}
+
+.message-content {
+  white-space: pre-wrap; /* Preserve line breaks and spaces */
+  flex-grow: 1;
+}
+
+.message-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.reaction-buttons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.reaction-buttons button {
+  margin-right: 2px;
+  padding: 1px 1px;
+}
+
+.reactions {
+  margin-top: 5px;
+}
+
+.ai-message {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(3, 122, 3);
+}
